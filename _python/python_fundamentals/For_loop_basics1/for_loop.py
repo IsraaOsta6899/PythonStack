@@ -3,7 +3,7 @@ for number in range(0,151,1):
 for number in range(5,1001,5):
     print(number)
 for number in range(0,101,1):
-    if number%5 & number%10:
+    if number%5 and number%10:
         print(number)
     if(number%5==0 ):
         print("Coding",number)
