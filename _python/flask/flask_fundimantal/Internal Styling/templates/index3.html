@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body style=" width: 100%;height:100%;text-align: center;">
+    <h2 style="margin-top: 10%;">Welcome</h2>
+
+    {% for x in range(0,countt): %}
+            
+    <div class="main" style="  width: 100%;height:250px;display: flex;justify-content: space-around;align-items: center;">
+        {%if countdiv>=4%}
+            {% for x in range(0,4) %}
+                <div class="blueDiv" style="width: 20%;height: 100%; border: 2px solid black;background-color: {{Bcolor}};">{{Bcolor}}</div>
+            {% endfor %}
+         {%endif%}  
+
+    </div><br>   
+    {% endfor %}
+    <div class="main" style="  width: 100%;height:250px;display: flex;justify-content: space-around;align-items: center;">
+    {% for x in range(0,countdiv%4) %}
+    <div class="blueDiv" style="width: 20%;height: 100%; border: 2px solid black;background-color: {{Bcolor}}"></div>
+    {% endfor %}
+   
+
+    <!-- <script>
+        
+        document.getElementsByClassName('blueDiv').style.backgroundColor=
+    </script> -->
+    
+</body>
+</html>
