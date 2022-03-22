@@ -9,13 +9,54 @@
 </head>
 <body style=" width: 100%;height: 100%;text-align: center;">
     <h2 style="margin-top: 10%;">Welcome</h2>
+    {%if page==1 %}
+        
+        
+        <div class="main" style="  width: 100%;height: 300px;display: flex;justify-content: space-around;align-items: center;">
+            {%for i in range (0,countdiv):%}
+            <div class="blueDiv" style="  background-color:#9fc5f8;width: 20%;height: 100%; border: 2px solid black;">k5</div>
+            {%endfor%}
+        </div>
+    {% endif %}
+   
+     
+    {%if page==2%}           
+    {% for x in range(0,countt): %}            
+    <div class="main" style="  width: 100%;height:250px;display: flex;justify-content: space-around;align-items: center;">
+        {%if countdiv>=4%}
+            {% for x in range(0,4): %}
+                <div class="blueDiv" style="width: 20%;height: 100%; border: 2px solid black; background-color:#9fc5f8;"></div>
+            {% endfor %}
+         {%endif%}  
+
+    </div><br>   
+    {% endfor %}
+    <div class="main" style="  width: 100%;height:250px;display: flex;justify-content: space-around;align-items: center;">
+    {% for x in range(0,countdiv%4): %}
+    <div class="blueDiv" style="width: 20%;height: 100%; border: 2px solid black; background-color:#9fc5f8"></div>
+    {% endfor %}
+    {%endif%}
+    {%if page==3%} 
+    {% for x in range(0,countt): %}
+            
+    <div class="main" style="  width: 100%;height:250px;display: flex;justify-content: space-around;align-items: center;">
+        {%if countdiv>=4%}
+            {% for x in range(0,4) %}
+                <div class="blueDiv" style="width: 20%;height: 100%; border: 2px solid black;background-color: {{Bcolor}};">{{Bcolor}}</div>
+            {% endfor %}
+         {%endif%}  
+
+    </div><br>   
+    {% endfor %}
+    <div class="main" style="  width: 100%;height:250px;display: flex;justify-content: space-around;align-items: center;">
+    {% for x in range(0,countdiv%4) %}
+    <div class="blueDiv" style="width: 20%;height: 100%; border: 2px solid black;background-color: {{Bcolor}}"></div>
+    {% endfor %}
+    {%endif%}
+
+   
     
-    <div class="main" style="  width: 100%;height: 300px;display: flex;justify-content: space-around;align-items: center;">
-        <div class="blueDiv" style="  background-color:#9fc5f8;width: 20%;height: 100%; border: 2px solid black;">k5</div>
-        <div class="blueDiv"  style="  background-color:#9fc5f8;width: 20%;height: 100% ;border: 2px solid black;">5</div>
-        <div class="blueDiv"  style="  background-color:#9fc5f8;width: 20%;height: 100% ;border: 2px solid black;">5</div>
-    </div>
-    
+
     
 </body>
 </html>
