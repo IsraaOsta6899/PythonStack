@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    
+    <form action="/">
     <h3>Info Submitted:</h3>
     <table>
         <tr>
@@ -31,8 +31,9 @@
             <td>Gender:</td>
             <td>{{session['gender']}}</td>
         </tr>
+        <tr><input type="submit" value="go back"></tr>
     </table>
-  
+</form>
   
 </body>
 </html>

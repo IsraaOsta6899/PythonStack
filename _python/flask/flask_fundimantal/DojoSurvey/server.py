@@ -4,6 +4,7 @@ app.secret_key = 'keep it secret, keep it safe'
 # our index route will handle rendering our form
 @app.route('/')
 def index():
+    session.clear()
     return render_template("index.html")
     
 @app.route('/result', methods=['POST'])
