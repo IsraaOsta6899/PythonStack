@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <form action="/" method="post">
+        <h1>Counter</h1>
+        <label name="c" value="0" >{{mycount}}</label>
+        <div class="twoButtons">
+            <input type="submit" name="submit" value="add two visits" class="red" >
+            <input type="submit" name="submit" value="reset" class="green" >
+
+        </div>
+    </form>
+    
+ 
+</body>
+</html>
