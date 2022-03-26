@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    
+    <h3>Info Submitted:</h3>
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td> {{session['Name']}}</td>
+        </tr>
+        <tr>
+            <td>Dojo Location:</td>
+            <td>{{ session['Location']}}</td>
+        </tr>
+        <tr>
+            <td>Favorite Language:</td>
+            <td>{{ session['Language']}}</td>
+        </tr>
+        <tr>
+            <td>Comment:</td>
+            <td>{{session['Comment']}}</td>
+        </tr>
+        <tr>
+            <td>Gender:</td>
+            <td>{{session['gender']}}</td>
+        </tr>
+    </table>
+  
+  
+</body>
+</html>
