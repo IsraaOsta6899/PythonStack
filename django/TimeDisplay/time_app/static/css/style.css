@@ -1,0 +1,17 @@
+p{
+    color:red;
+    border: 2px solid black
+}
+h1{
+    color:green
+}
+.myDiv{
+    background-color: bisque;
+    width: 30%;
+    text-align: center;
+    margin:0 auto;
+    margin-top: 15%;
+    font-family: cursive;
+    border: 2px solid green;
+    font-size: larger;
+}
