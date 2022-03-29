@@ -1,0 +1,40 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: cursive;
+}
+div{
+    height: 100%;
+    width: 100%;
+    
+}
+section{
+    margin-left: 10%;
+    width:80%;
+    height:45%;
+    text-align: center;
+}
+
+table{
+    width:100%;
+    height:90%;
+    border:2px solid black;
+    background-color:rgb(205, 180, 228)
+
+}
+td{
+    border: 2px solid black;
+    
+}
+form{
+    width:100%;
+    height:100%;
+   
+
+}
+form div{
+    width:100%;
+    height:30%;
+    justify-content:center;
+    
+}
