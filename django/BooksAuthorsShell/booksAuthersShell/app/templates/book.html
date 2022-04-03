@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>{{book.title}}</h1>
+    <h3>ID: <span style="color: cornflowerblue;">{{book.id}}</span></h3>
+    <h3>Description: <span style="color: cornflowerblue;">{{book.desc}}</span></h3>
+    {%for auth in book.authors.all  %}
+    <h4><span style="color: rgb(40, 172, 123);">--->{{auth.first_name}}-{{auth.last_name}}</span></h4>
+    {%endfor%}
+    <form action="/addauthtobook/{{book.id}}" method="post">
+        {% csrf_token %}
+    <label for="auths">Authors:</label>
+    <select name="auths" >
+        {%for auth in auths%}
+        <option value="{{auth.id}}">{{auth.first_name}}{{auth.last_name}}</option>
+        {%endfor%}
+    </select>
+    
+        <input type="submit" value="add">
+    </form>
+
+    
+</body>
+</html>
